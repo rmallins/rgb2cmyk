@@ -1,0 +1,11 @@
+This utility takes a raw binary rgb image file as input, and 
+outputs a CMYK equivalent image to stdout.
+It uses the algorithm documented here:
+
+   http://en.wikipedia.org/w/index.php?title=CMYK_color_model&oldid=147065274#Conversions
+
+Use it as follows:
+
+   > rgb2cmyk rgbfile.raw > cmykfile.raw
+
+Robin Mallinson 18th August 2010

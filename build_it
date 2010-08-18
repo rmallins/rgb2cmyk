@@ -1,0 +1,2 @@
+#! /bin/bash
+gcc -Wall -O2 -o rgb2cmyk rgb2cmyk.c

@@ -31,8 +31,8 @@
  ******************************************************************************/
 #include <stdio.h>
 #include <stdint.h>
-#define RGB_SIZE  (3)
-#define CMYK_SIZE (4)
+#define RGB_SIZE_BYTES  (3)
+#define CMYK_SIZE_BYTES (4)
 
 static
 int minimum(int a, int b, int c)
@@ -82,11 +82,11 @@ void RgbToCmyk( uint8_t* rgb_store )
 static
 void rgb_store(int c)
 {   
-   static uint8_t rgb_store[RGB_SIZE];
+   static uint8_t rgb_store[RGB_SIZE_BYTES];
    static int idx = 0;
 
    rgb_store[idx++] = (uint8_t)c;
-   if (idx == RGB_SIZE)
+   if (idx == RGB_SIZE_BYTES)
    {
       RgbToCmyk(rgb_store);         //convert to CMYK and print
       idx = 0;                      // prepare for next RGB

@@ -31,8 +31,6 @@
  ******************************************************************************/
 #include <stdio.h>
 #include <stdint.h>
-typedef unsigned char       uint8_t;      /* unsigned 8 BIT value  */
-typedef unsigned int        uint32_t;     /* unsigned 32 BIT value */
 #define RGB_SIZE  (3)
 #define CMYK_SIZE (4)
 
